@@ -16,7 +16,12 @@ export const useObjectsStore = defineStore('objects', {
             this.error = null
 
             try {
-                const response = await axios.get(config.public.apiUrl)
+                console.log('Fetching from:', `${config.public.apiUrl}/items`)
+
+                const response = await axios.get(`${config.public.apiUrl}/items`)
+                console.log('====================================');
+                console.log(response.data,"fuck");
+                console.log('====================================');
                 this.items = response.data
             } catch (err: any) {
                 this.error = err.message
