@@ -1,0 +1,49 @@
+{
+    "items": [
+        {
+            "id": "1",
+            "name": "Google Pixel 6 Pro",
+            "data": {
+                "color": "Cloudy White",
+                "capacity": "128 GB"
+            },
+            "image": "/img/Google_Pixel_6_Pro.jpg"
+        },
+        {
+            "id": "2",
+            "name": "iPhone 14 Pro",
+            "data": {
+                "color": "Space Black",
+                "capacity": "256 GB"
+            },
+            "image": "https://via.placeholder.com/150?text=iPhone+14+Pro"
+        },
+        {
+            "id": "3",
+            "name": "Samsung Galaxy S23",
+            "data": {
+                "color": "Phantom Green",
+                "capacity": "512 GB"
+            },
+            "image": "https://via.placeholder.com/150?text=Galaxy+S23"
+        },
+        {
+            "id": "4",
+            "name": "OnePlus 11",
+            "data": {
+                "color": "Titanium Black",
+                "capacity": "256 GB"
+            },
+            "image": "https://via.placeholder.com/150?text=OnePlus+11"
+        },
+        {
+            "id": "5",
+            "name": "Xiaomi 13 Pro",
+            "data": {
+                "color": "Ceramic White",
+                "capacity": "128 GB"
+            },
+            "image": "https://via.placeholder.com/150?text=Xiaomi+13+Pro"
+        }
+    ]
+}
