@@ -1,27 +1,25 @@
 import { defineStore } from 'pinia'
 import axios from 'axios'
-import { useRuntimeConfig } from '#app'
 
 export const useObjectsStore = defineStore('objects', {
     state: () => ({
-        items: [] as any[],
+        items: [],
         loading: false,
-        error: '',
+        error: null
     }),
 
     actions: {
         async fetchObjects() {
+            const config = useRuntimeConfig()
+
             this.loading = true
-            this.error = ''
+            this.error = null
 
             try {
-                const config = useRuntimeConfig()
-                
-                const response = await axios.get(config.public.apiUrl as string)
-
+                const response = await axios.get(config.public.apiUrl)
                 this.items = response.data
             } catch (err: any) {
-                this.error = err.message || 'Error fetching data'
+                this.error = err.message
             } finally {
                 this.loading = false
             }

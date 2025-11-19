@@ -1,10 +1,5 @@
-<script>
-import Index from './pages/index.vue';
-
-</script>
-
 <template>
-  <div>
-    <Index/>
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
